@@ -14,12 +14,14 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #3385FF;
+      background-color: #3385ff;
+      border-radius: .9rem;
     }
 
     li {
       float: left;
-      border-right: 1px solid #bbb;
+      border: 1px solid #bbb;
+      margin: 2px;
     }
 
     li a,
@@ -29,15 +31,18 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      border-radius: .9rem;
     }
 
     li a:hover,
     .dropdown:hover .dropbtn {
-      background-color: green;
+      background-color: rgb(4, 75, 4);
+      border-radius: .9rem;
     }
 
     li.dropdown {
       display: inline-block;
+      border-radius: .9rem;
     }
 
     .dropdown-content {
@@ -47,6 +52,7 @@
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
+      border-radius: .9rem;
     }
 
     .dropdown-content a {
@@ -68,69 +74,70 @@
 </head>
 
 <body>
-  <a href="https://manu321-code.github.io/mon-blog/"><img src="mon logo html.jpg" width="240" height="90"></a>
-  <ul>
-    <li class="dropdown">
-      <a href="#coucou" class="dropbtn">Maison</a>
-      <div class="dropdown-content">
-        <a href="#meilleurs">Les sniper</a>
-        <a href="#mandalorian">The mandalorian</a>
-        <a href="#">La nature</a>
-      </div>
-    </li>
-    <li class="dropdown">
-      <a href="#meilleurs" class="dropbtn">Les sniper</a>
-      <div class="dropdown-content">
-        <a href="#meilleurs">Les 10 meilleurs sniper</a>
-        <a href="#cestquoi">C'est quoi un sniper ?</a>
-        <a href="#apprentiesniper">Le sniper</a>
-      </div>
-    </li>
-    <li class="dropdown">
-      <a href="#mandalorian" class="dropbtn">The Mandalorian</a>
-      <div class="dropdown-content">
-        <a href="#histoire">Histoire</a>
-        <a href="#personnages">Personnages</a>
-        <a href="#episodes">Episodes</a>
-      </div>
-    </li>
-    <li class="dropdown">
-      <a href="#nature" class="dropbtn">La nature</a>
-      <div class="dropdown-content">
-        <a href="#survie">la survie ?</a>
-        <a href="#5C">c'est quoi les 5"C" ?</a>
-        <a href="#cabane">l'abris de survie</a>
-      </div>
-    </li>
-    <li style="float:right" class="dropdown">
-      <a class="dropbtn" href="#infos">infos</a>
-      <div class="dropdown-content">
-        <a href="#infos">auteur emmanuel</a>
-        <a href="#infos">date 27-05-20</a>
-      </div>
-    </li>
-  </ul>
-  <br>
-  <center>
-    <div id="horloge">...</div>
-  </center>
-  <script type="text/javascript">
-    function Timer() {
-      var dt = new Date()
-      document.getElementById("horloge").innerHTML = "heure courante : " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-      setTimeout("Timer()", 900);
-    }
-    Timer();
-  </script>
-  <center>
-    <h1>
-      <div id="coucou">Coucou tout le monde, ceci est mon blog
-    </h1>
-    </div>
+  <div style:solid; width:300px; height:300px; background-color:black; border-radius:10px;>
+    <a href="https://manu321-code.github.io/mon-blog/"><img src="mon logo html.jpg" width="240" height="90"></a>
+    <ul>
+      <li class="dropdown">
+        <a href="#coucou" class="dropbtn">Maison</a>
+        <div class="dropdown-content">
+          <a href="#meilleurs">Les sniper</a>
+          <a href="#mandalorian">The mandalorian</a>
+          <a href="#">La nature</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#meilleurs" class="dropbtn">Les sniper</a>
+        <div class="dropdown-content">
+          <a href="#meilleurs">Les 10 meilleurs sniper</a>
+          <a href="#cestquoi">C'est quoi un sniper ?</a>
+          <a href="#apprentiesniper">Le sniper</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#mandalorian" class="dropbtn">The Mandalorian</a>
+        <div class="dropdown-content">
+          <a href="#histoire">Histoire</a>
+          <a href="#personnages">Personnages</a>
+          <a href="#episodes">Episodes</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#nature" class="dropbtn">La nature</a>
+        <div class="dropdown-content">
+          <a href="#survie">la survie ?</a>
+          <a href="#5C">c'est quoi les 5"C" ?</a>
+          <a href="#cabane">l'abris de survie</a>
+        </div>
+      </li>
+      <li style="float:right" class="dropdown">
+        <a class="dropbtn" href="#infos">infos</a>
+        <div class="dropdown-content">
+          <a href="#infos">auteur emmanuel</a>
+          <a href="#infos">date 27-05-20</a>
+        </div>
+      </li>
+    </ul>
+    <br>
+    <center>
+      <div id="horloge">...</div>
+    </center>
+    <script type="text/javascript">
+      function Timer() {
+        var dt = new Date()
+        document.getElementById("horloge").innerHTML = "heure courante : " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+        setTimeout("Timer()", 900);
+      }
+      Timer();
+    </script>
+    <center>
+      <h1>
+        <div id="coucou">Coucou tout le monde, ceci est mon blog
+      </h1>
+  </div>
   </center>
   <p style="background-color:DodgerBlue;">je m'appelle Emmanuel</p>
   <p>j'espère que vous allez tous bien &#128513;.</p>
-  <p>bon, donc la ce que je vais faire c'est que je vais mettre une nouvelle page sur les sniperet tireurs d'élites.
+  <p>bon, donc la ce que je vais faire c'est que je vais mettre une nouvelle page sur les snipers et tireurs d'élites.
     <br> je vais mettre une bonne petite vidéo sur les sniper.</p>
   <p>
   <div id="meilleurs">d'abord, je vais montrer qui sont les 10 melleurs sniper de tous les temps.</div>
@@ -255,6 +262,7 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/NVU9U4ubcVs" frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
   </iframe>
+  </div>
 </body>
 
 </html>
